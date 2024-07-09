@@ -180,7 +180,7 @@ Lack of developer resources and features
 layout: statement
 ---
 
-<div class="fixed top-10 text-center w-full left-0 text-zinc-300">A (Pretty Subjective) Database Comparison</div>
+<div class="fixed top-10 text-center w-full left-0 text-zinc-300">A (Pretty Subjective) Comparison</div>
 
 <div class="h-full flex justify-center items-center">
   <img src="/comparison.png" class="rounded w-full" />
@@ -194,11 +194,13 @@ layout: statement
 layout: statement
 ---
 
-A (Pretty Naive) Benchmark Using 1M Rows
+A (Pretty Naive) Benchmark
 
 <div class="h-full flex justify-center items-center">
   <img src="/benchmark.png" class="rounded w-full" />
 </div>
+
+<div class="text-left mt-2 text-zinc-500 text-xs">All tables contain 1M rows</div>
 
 ---
 ---
