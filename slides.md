@@ -187,8 +187,7 @@ layout: statement
 </div>
 
 <div class="fixed bottom-12 text-zinc-500 text-xs">Data as of June 2022</div>
-<div class="fixed bottom-8 text-zinc-500 text-xs">* Inferred from online benchmarks and other resources</div>
-
+<div class="fixed bottom-8 text-zinc-500 text-xs">* Inferred from online benchmarks and other resources; may be inaccurate</div>
 
 ---
 layout: statement
@@ -196,11 +195,12 @@ layout: statement
 
 A (Pretty Naive) Benchmark
 
-<div class="h-full flex justify-center items-center">
+<div class="h-full flex justify-center items-center -mt-3">
   <img src="/benchmark.png" class="rounded w-full" />
 </div>
 
-<div class="text-left mt-2 text-zinc-500 text-xs">All tables contain 1M rows</div>
+<div class="text-left mt-2 text-zinc-500 text-xs">Data as of June 2022</div>
+<div class="text-left text-zinc-500 text-xs">All tables contain 1M rows</div>
 
 ---
 ---
@@ -329,14 +329,26 @@ GROUP BY asset_id;
 
 <v-click>
 
+<div class="grid grid-cols-2 items-center">
+
 ```sql
 SELECT
   asset_id,
-  maxMerge(tstamp),
-  argMaxMerge(price)
+  maxMerge(tstamp) AS tstamp,
+  argMaxMerge(price) AS price
 FROM prices_latest
 GROUP BY asset_id;
 ```
+
+```
+Results
+┌─asset_id─┬─tstamp─┬─price─┐
+│ a        │      9 │  2.42 │
+│ b        │      9 │  2.61 │
+└──────────┴────────┴───────┘
+```
+
+</div>
 
 </v-click>
 
