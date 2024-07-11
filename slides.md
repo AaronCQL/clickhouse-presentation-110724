@@ -48,7 +48,7 @@ Visualising the open, high, low, and closing prices (OHLC) of an asset within a 
 
 ::left::
 
-Assume the following data rows:
+Example `prices` table:
 
 ```
 ┌────────┬───────┬──────────┐
@@ -75,7 +75,7 @@ Assume the following data rows:
 
 <v-click>
 
-Query using ClickHouse SQL:
+Example query using ClickHouse SQL:
 
 ```sql
 SELECT
@@ -90,10 +90,6 @@ GROUP BY floor(tstamp / 10) * 10 AS ts
 --       toStartOfInterval(tstamp, INTERVAL 1 hour)
 ORDER BY ts;
 ```
-
-</v-click>
-
-<v-click>
 
 ```
 Results
