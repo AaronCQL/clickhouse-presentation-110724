@@ -223,9 +223,7 @@ layout: statement
 
 https://clickhouse.com/docs/en/optimize/sparse-primary-indexes
 
-<div class="flex justify-center py-8">
-  <img src="/ch-docs.png" class="rounded ring-2 ring-zinc-700 -mt-8" >
-</div>
+<img src="/ch-docs.png" class="rounded ring-2 ring-zinc-700 h-90" />
 
 ---
 layout: two-cols-header
@@ -288,7 +286,7 @@ Results
 layout: center
 ---
 <div class="flex justify-center py-8">
-  <img src="/limit-by.png" class="rounded ring-2 ring-zinc-700 w-75%" >
+  <img src="/limit-by.png" class="rounded ring-2 ring-zinc-700 w-75%" />
 </div>
 
 ---
@@ -355,7 +353,7 @@ Results
 Join algorithm where tables are individually sorted, then merged
 
 <div class="flex justify-center pt-2">
-  <img src="/smj.png" class="h-90" >
+  <img src="/smj.png" class="h-90" />
 </div>
 
 ---
@@ -363,7 +361,7 @@ layout: center
 ---
 
 <div class="flex justify-center pt-2">
-  <img src="/smj-issue.png" class="h-110 rounded ring-2 ring-zinc-700" >
+  <img src="/smj-issue.png" class="h-110 rounded ring-2 ring-zinc-700" />
 </div>
 
 ---
